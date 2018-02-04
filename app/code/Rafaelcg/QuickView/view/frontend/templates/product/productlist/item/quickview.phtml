@@ -1,0 +1,10 @@
+<?php /** @var Magento\Catalog\Block\Product\ProductList\Item\Block $block */ ?>
+<button type="button"
+        id="quickViewButton<?php echo $block->getProduct()->getId() ?>"
+        class="button-quickview"
+        data-mage-init='{ "Rafaelcg_QuickView/js/product/productlist/item/quickview": { } }'
+        data-id="<?php echo $block->getProduct()->getId() ?>"
+        data-url="<?php echo $block->getProductUrl($block->getProduct()) ?>">
+    <?php echo __('Quick view') ?>
+</button>
+<div id="quickViewContainer<?php echo $block->getProduct()->getId() ?>"></div>
